@@ -1,0 +1,120 @@
+header{
+    width: 100%;
+    height: 70px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color : white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow:  10px 10px 5px 0px rgb(31, 22, 36);;
+}
+
+.img{
+    width: 50px;
+}
+.gen{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+}
+
+.genFirst{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.genSecond{
+    width: 49%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.genFirst:hover .genChild{
+    display: flex;
+}
+.genFirst:hover .genH1::after{
+    width: 100%;
+    border: 1px solid rgb(124, 42, 42);
+}
+
+.signButton{
+    padding: 5px 35px;
+    background-color: white;
+    font-weight: 900;
+    border: none;
+    font-size: 17px;
+}
+.signButton:hover{
+    background-color: rgb(124, 42, 42);
+    color: white;
+}
+.genChild{
+    position: absolute;
+    padding: 20px 10px 10px 10px;
+    top: 62px;
+    height: 500px;
+    width: 700px;
+    border: 1px solid black;
+    background-color: black;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 10;
+    
+}
+
+.genH1{
+    position: relative;
+    padding: 5px 20px;
+    text-align: center;
+}
+.genSencondH1{
+    position: relative;
+    padding: 5px 20px;
+    text-align: center;
+}
+.genH1::after{
+
+    content: '';
+    width: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .7s linear;
+ 
+}
+
+.genSecondH1::after{
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .7s linear;
+  
+}
+.genSecond:hover .genSecondH1::after{
+    width: 100%;
+    border: 1px solid rgb(124, 42, 42);
+}
+.genSecond:hover .genSecondH1{
+    color: white;
+}
